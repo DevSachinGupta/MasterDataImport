@@ -97,7 +97,7 @@ public Step csvFileToDatabaseStep() {
 @Bean
 public TaskExecutor taskExecutor() {
 	SimpleAsyncTaskExecutor asyncTaskExecutor = new SimpleAsyncTaskExecutor("spring_batch_");
-	asyncTaskExecutor.setConcurrencyLimit(2);
+	asyncTaskExecutor.setConcurrencyLimit(5);
 	return asyncTaskExecutor;
 }
 
