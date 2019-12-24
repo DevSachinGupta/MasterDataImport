@@ -39,7 +39,7 @@ public StepBuilderFactory stepBuilderFactory;
 public FlatFileItemReader<Location> csvLocationReader(){
 	
 	FlatFileItemReader<Location> csvReader = new FlatFileItemReader<Location>();
-	csvReader.setResource(new ClassPathResource("uscities_mod1.csv"));
+	csvReader.setResource(new ClassPathResource("europe_data.csv"));
 	csvReader.setLineMapper(new DefaultLineMapper<Location>() {{
 		setLineTokenizer(new DelimitedLineTokenizer() {{
 			setNames(new String[] {"city_name", "state_name", "country_name"});
