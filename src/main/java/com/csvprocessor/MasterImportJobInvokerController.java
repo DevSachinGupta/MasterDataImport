@@ -25,4 +25,10 @@ public class MasterImportJobInvokerController {
 		
 		return "Batch job has been initialized !!!!";
 	}
+	
+	@RequestMapping("/")
+	public String invokeCsvImportJob() throws Exception {
+		
+		return "<div><h1>Hello, Welcome to CSV 2 DB</h1><a href="/invokeJob">Invoke Job</a></div>";
+	}
 }
