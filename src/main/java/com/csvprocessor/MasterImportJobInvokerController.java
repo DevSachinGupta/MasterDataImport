@@ -27,7 +27,7 @@ public class MasterImportJobInvokerController {
 	}
 	
 	@RequestMapping("/")
-	public String invokeCsvImportJob() throws Exception {
+	public String invokeCsvImportJob2() throws Exception {
 		
 		return "<div><h1>Hello, Welcome to CSV 2 DB</h1></div>";
 	}
